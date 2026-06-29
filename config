@@ -2,6 +2,8 @@ exec dbus-update-activation-environment --all
 exec gnome-keyring-daemon --start --components=secrets 
 exec --no-startup-id /usr/libexec/xdg-desktop-portal-gnome
 exec --no-startup-id brave --profile-directory=Default --app-id=bgdbmehlmdmddlgneophbcddadgknlpm
+exec --no-startup-id obsidian 
+exec --no-startup-id pavucontrol 
 
 # exec --no-startup-id /usr/libexec/xdg-desktop-portal
 exec_always --no-startup-id ~/.config/polybar/launch.sh
@@ -190,7 +192,3 @@ bindsym $mod+Print exec --no-startup-id ~/.config/i3/scripts/screenshot.sh selec
 
 exec --no-startup-id i3-msg "workspace 1; move workspace to output $pm"
 exec --no-startup-id i3-msg "workspace 11; move workspace to output $sm"
-
-# test will this change propagated
-# another test change nix
-# antoher another test change
