@@ -5,6 +5,10 @@ exec --no-startup-id brave --profile-directory=Default --app-id=bgdbmehlmdmddlgn
 exec --no-startup-id obsidian 
 exec --no-startup-id pavucontrol 
 
+exec --no-startup-id xrandr \
+    --output DP-0 --mode 1920x1080 --rate 165 --primary --pos 0x420 \
+    --output HDMI-0 --mode 1920x1080 --rate 60 --rotate right --pos 1920x0
+
 # exec --no-startup-id /usr/libexec/xdg-desktop-portal
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
